@@ -50,5 +50,5 @@ rose.remove();
 }
 
 setInterval(createRose,600);
-createRose();
+
 });
