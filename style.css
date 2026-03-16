@@ -18,6 +18,12 @@
             background-color: var(--bg-white);
             color: var(--text-color);
             overflow-x: hidden;
+                font-family: sans-serif;
+                text-align:center;
+        }
+        img{
+        max-width:100%;
+        height:auto;
         }
 
         h1, h2, h3 {
@@ -563,4 +569,38 @@
         opacity:0.8;
         }
 
+        }
+        .gallery{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        padding:20px;
+        }
+        
+        .gallery img{
+        width:100%;
+        border-radius:10px;
+        }
+        @media (max-width: 900px){
+        
+        .gallery{
+        grid-template-columns: repeat(2,1fr);
+        }
+        
+        }
+        @media (max-width: 600px){
+
+        .gallery{
+        grid-template-columns: 1fr;
+        }
+        
+        h1{
+        font-size:26px;
+        }
+        
+        p{
+        font-size:16px;
+        padding:0 15px;
+        }
+        
         }
